@@ -1,0 +1,4 @@
+--13. CREAR FUNCIÓN DE LIMPIEZA DE ENTEROS
+
+CREATE OR REPLACE FUNCTION keepcoding.fnc_cleaning_integer(p_integer INT64) RETURNS INT64 AS
+((IFNULL(p_integer, -999999)))
